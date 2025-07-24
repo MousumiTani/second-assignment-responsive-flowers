@@ -5,15 +5,94 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1280px;
+  margin: 30px auto;
+}
 .navigation {
   display: flex;
   justify-content: space-between;
 }
-li {
-  list-style-type: none;
+.navigation li {
+  list-style-type: none; /*to remove bullet point*/
   display: inline;
 }
-li a {
-  text-decoration: none;
+.navigation li a {
+  text-decoration: none; /*to remove underline*/
   padding: 14px 16px;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.banner h2 {
+  font-weight: bold;
+  font-size: 65px;
+}
+p {
+  color: #8987a1;
+  font-size: 22px;
+}
+
+.card-heading {
+  text-align: center;
+  margin-top: 10%;
+}
+.card-heading span {
+  font-weight: bold;
+  font-size: 50px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 10px;
+  margin: 20px auto;
+}
+.card {
+  width: 300px;
+  text-align: center;
+  border: 2px;
+  margin: 10px;
+}
+.btn {
+  max-width: 300px;
+  background-color: #e95a08;
+  font-weight: 600;
+  color: white;
+  padding: 15px 90px;
+  border: none;
+}
+.plants-lover-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20%;
+}
+.flower-store-image {
+  flex: 50%;
+}
+.plants-lover-text {
+  flex: 50%;
+}
+.flower-store-image img {
+  width: 540px;
+  height: 590px;
+}
+.plants-lover-text h3 {
+  margin: 5% auto;
+  font-weight: bold;
+  font-size: 50px;
+  color: #000000;
+}
+.plants-lover-text li {
+  color: #8987a1;
+  font-size: 22px;
+  margin: 5%;
 }
