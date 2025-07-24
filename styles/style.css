@@ -1,0 +1,19 @@
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  list-style-type: none;
+  display: inline;
+}
+li a {
+  text-decoration: none;
+  padding: 14px 16px;
+}
