@@ -54,6 +54,7 @@ p {
   font-size: 50px;
 }
 .card-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   gap: 10px;
@@ -77,7 +78,7 @@ p {
 .plants-lover-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .flower-store-image {
   flex: 50%;
@@ -85,10 +86,18 @@ p {
 .plants-lover-text {
   flex: 50%;
 }
-.flower-store-image img {
+.main-image img {
   width: 540px;
   height: 590px;
 }
+.badge {
+  position: relative;
+  bottom: 90%;
+  right: 50px;
+  width: 90px;
+  height: auto;
+}
+
 .plants-lover-text h3 {
   margin: 5% auto;
   font-weight: bold;
