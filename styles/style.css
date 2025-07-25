@@ -16,6 +16,7 @@ body {
   margin: 30px auto;
   background-color: #f2f2f2;
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -32,6 +33,15 @@ body {
   display: flex;
   align-items: center;
   color: black;
+}
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: left;
+  }
+  .hide {
+    display: none;
+  }
 }
 
 .banner h2 {
@@ -60,6 +70,14 @@ p {
   gap: 10px;
   margin: 20px auto;
 }
+@media screen and (max-width: 576px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    margin: 15px 20px;
+  }
+}
 .card {
   width: 300px;
   text-align: center;
@@ -80,6 +98,12 @@ p {
   justify-content: space-between;
   margin-top: 10%;
 }
+@media screen and (max-width: 576px) {
+  .plants-lover-section {
+    flex-direction: column;
+  }
+}
+
 .flower-store-image {
   flex: 50%;
 }
@@ -91,12 +115,15 @@ p {
   height: 590px;
 }
 .badge {
+  display: none;
+}
+/*.badge {
   position: relative;
   bottom: 90%;
   right: 50px;
   width: 90px;
   height: auto;
-}
+}*/
 
 .plants-lover-text h3 {
   margin: 5% auto;
@@ -207,13 +234,28 @@ p {
 .footer-column {
   flex: 1 1 200px;*/
 
-.footer-container {
+/*.footer-container {
   max-width: 1200px;
   margin: 5% auto;
   display: grid;
+  grid-template-columns: repeat(4, 2fr)
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  gap: 30px;*/
+
+.footer-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 10px;
+  margin: 5% auto;
 }
+@media screen and (max-width: 576px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .logo-section img.logo {
   width: 100px;
   margin-bottom: 10px;
